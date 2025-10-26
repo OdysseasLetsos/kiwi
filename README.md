@@ -52,7 +52,7 @@ Performs mixed operations concurrently with different read/write ratios:
 
 ---
 
-## Reader–Writer Problem
+### Reader–Writer Problem
 
 The access policy allows:
 
@@ -68,7 +68,8 @@ db_get();
 
 
 
-Code Modifications
+##Code Modifications
+
 - bench.cc
 
 Added pthread.h and struct dataset for thread arguments.
@@ -93,7 +94,8 @@ pthread_mutex_t reader;
 Ensured exclusive execution for writers and simultaneous access for readers.
 
 
-How to Run
+##How to Run
+
 1.Compile
 
 make all
@@ -116,7 +118,7 @@ or readwrite, the user chooses the read/write ratio:
 
 
  
-Results & Observations
+##Results & Observations
 
 The multithreaded approach significantly improved performance.
 Proper synchronization prevented errors such as segmentation faults and race conditions.
@@ -124,7 +126,7 @@ The Reader–Writer implementation ensures data stability and safety.
 
 ---
 
-Contributors
+##Contributors
 Implementation: Odysseas Letsos
 Language: C / C++
 Thread Library: pthreads
