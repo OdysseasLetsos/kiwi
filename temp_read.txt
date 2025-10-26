@@ -1,0 +1,693 @@
+Keys:		16 bytes each
+Values: 	1000 bytes each
+Entries:	100000
+IndexSize:	2.4 MB (estimated)
+DataSize:	95.7 MB (estimated)
+---------------------------------------------------------------------------------------------------
+Date:		Mon Apr  3 16:45:17 2023
+CPU:		1 *  Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+CPUCache:	12288 KB
+
+[6165] 03 Apr 16:45:17.023 . file.c:200 Creating directory structure: testdb/si
+[6165] 03 Apr 16:45:17.024 . file.c:65 Mapping of 194 bytes for testdb/si/manifest
+[6165] 03 Apr 16:45:17.024 . sst.c:331 Loading SST file testdb/si/0/2396.sst for level 0 158168 bytes
+[6165] 03 Apr 16:45:17.024 . file.c:65 Mapping of 158168 bytes for testdb/si/0/2396.sst
+[6165] 03 Apr 16:45:17.024 - sst_loader.c:183 Index @ offset: 147485 size: 10611
+[6165] 03 Apr 16:45:17.024 - sst_loader.c:184 Meta Block @ offset: 147413 size: 72
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:201 Data size:        142081
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:203 Index size:       0
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:204 Key size:         35520
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:205 Num blocks size:  444
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:206 Num entries size: 2220
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:207 Value size:       2220000
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:210 Filter size:      5332
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:211 Bloom offset 142081 size: 5332
+[6165] 03 Apr 16:45:17.024 . sst.c:342 Smallest key: key-5780 Largest key: key-7999 seeks: 100
+[6165] 03 Apr 16:45:17.024 . sst.c:331 Loading SST file testdb/si/0/2397.sst for level 0 113927 bytes
+[6165] 03 Apr 16:45:17.024 . file.c:65 Mapping of 113927 bytes for testdb/si/0/2397.sst
+[6165] 03 Apr 16:45:17.024 - sst_loader.c:183 Index @ offset: 106244 size: 7611
+[6165] 03 Apr 16:45:17.024 - sst_loader.c:184 Meta Block @ offset: 106172 size: 72
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:201 Data size:        102340
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:203 Index size:       0
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:204 Key size:         25456
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:205 Num blocks size:  319
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:206 Num entries size: 1591
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:207 Value size:       1591000
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:210 Filter size:      3832
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:211 Bloom offset 102340 size: 3832
+[6165] 03 Apr 16:45:17.024 . sst.c:342 Smallest key: key-6409 Largest key: key-7999 seeks: 100
+[6165] 03 Apr 16:45:17.024 . sst.c:331 Loading SST file testdb/si/0/2398.sst for level 0 70779 bytes
+[6165] 03 Apr 16:45:17.024 . file.c:65 Mapping of 70779 bytes for testdb/si/0/2398.sst
+[6165] 03 Apr 16:45:17.024 - sst_loader.c:183 Index @ offset: 65999 size: 4708
+[6165] 03 Apr 16:45:17.024 - sst_loader.c:184 Meta Block @ offset: 65927 size: 72
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:201 Data size:        63547
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:203 Index size:       0
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:204 Key size:         15808
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:205 Num blocks size:  198
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:206 Num entries size: 988
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:207 Value size:       988000
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:210 Filter size:      2380
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:211 Bloom offset 63547 size: 2380
+[6165] 03 Apr 16:45:17.024 . sst.c:342 Smallest key: key-7012 Largest key: key-7999 seeks: 100
+[6165] 03 Apr 16:45:17.024 . sst.c:331 Loading SST file testdb/si/1/2395.sst for level 1 6128346 bytes
+[6165] 03 Apr 16:45:17.024 . file.c:65 Mapping of 6128346 bytes for testdb/si/1/2395.sst
+[6165] 03 Apr 16:45:17.024 - sst_loader.c:183 Index @ offset: 5707235 size: 421039
+[6165] 03 Apr 16:45:17.024 - sst_loader.c:184 Meta Block @ offset: 5707163 size: 72
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:201 Data size:        5501911
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:203 Index size:       0
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:204 Key size:         1368288
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:205 Num blocks size:  17104
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:206 Num entries size: 85518
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:207 Value size:       85518000
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:210 Filter size:      205252
+[6165] 03 Apr 16:45:17.024 . sst_loader.c:211 Bloom offset 5501911 size: 205252
+[6165] 03 Apr 16:45:17.030 . sst.c:342 Smallest key: key-0 Largest key: key-9999 seeks: 100
+[6165] 03 Apr 16:45:17.030 . sst.c:331 Loading SST file testdb/si/2/1520.sst for level 2 11483246 bytes
+[6165] 03 Apr 16:45:17.030 . file.c:65 Mapping of 11483246 bytes for testdb/si/2/1520.sst
+[6165] 03 Apr 16:45:17.030 - sst_loader.c:183 Index @ offset: 10689719 size: 793455
+[6165] 03 Apr 16:45:17.030 - sst_loader.c:184 Meta Block @ offset: 10689647 size: 72
+[6165] 03 Apr 16:45:17.030 . sst_loader.c:201 Data size:        10305643
+[6165] 03 Apr 16:45:17.030 . sst_loader.c:203 Index size:       0
+[6165] 03 Apr 16:45:17.030 . sst_loader.c:204 Key size:         2560000
+[6165] 03 Apr 16:45:17.030 . sst_loader.c:205 Num blocks size:  32000
+[6165] 03 Apr 16:45:17.030 . sst_loader.c:206 Num entries size: 160000
+[6165] 03 Apr 16:45:17.030 . sst_loader.c:207 Value size:       160000000
+[6165] 03 Apr 16:45:17.030 . sst_loader.c:210 Filter size:      384004
+[6165] 03 Apr 16:45:17.030 . sst_loader.c:211 Bloom offset 10305643 size: 384004
+[6165] 03 Apr 16:45:17.042 . sst.c:342 Smallest key: key-0 Largest key: key-99999 seeks: 100
+[6165] 03 Apr 16:45:17.042 . sst.c:51 --- Level 0 [  3 files, 334 KiB  ]---
+[6165] 03 Apr 16:45:17.042 . sst.c:60 Metadata filenum:2396 smallest: key-5780 largest: key-7999
+[6165] 03 Apr 16:45:17.042 . sst.c:60 Metadata filenum:2397 smallest: key-6409 largest: key-7999
+[6165] 03 Apr 16:45:17.042 . sst.c:60 Metadata filenum:2398 smallest: key-7012 largest: key-7999
+[6165] 03 Apr 16:45:17.042 . sst.c:51 --- Level 1 [  1 files,   5 MiB  ]---
+[6165] 03 Apr 16:45:17.042 . sst.c:60 Metadata filenum:2395 smallest: key-0 largest: key-9999
+[6165] 03 Apr 16:45:17.042 . sst.c:51 --- Level 2 [  1 files,  10 MiB  ]---
+[6165] 03 Apr 16:45:17.042 . sst.c:60 Metadata filenum:1520 smallest: key-0 largest: key-99999
+[6165] 03 Apr 16:45:17.042 . sst.c:51 --- Level 3 [  0 files,   0 bytes]---
+[6165] 03 Apr 16:45:17.042 . sst.c:51 --- Level 4 [  0 files,   0 bytes]---
+[6165] 03 Apr 16:45:17.042 . sst.c:51 --- Level 5 [  0 files,   0 bytes]---
+[6165] 03 Apr 16:45:17.042 . sst.c:51 --- Level 6 [  0 files,   0 bytes]---
+[6165] 03 Apr 16:45:17.672 . db.c:33 Closing database 0
+[6165] 03 Apr 16:45:17.672 . sst.c:415 Sending termination message to the detached thread
+[6165] 03 Apr 16:45:17.672 . sst.c:422 Waiting the merger thread
+[6165] 03 Apr 16:45:17.672 - sst.c:176 Exiting from the merge thread as user requested
+[6165] 03 Apr 16:45:17.672 - file.c:170 Truncating file testdb/si/manifest to 195 bytes
+[6165] 03 Apr 16:45:17.676 . log.c:46 Removing old log file testdb/si/0.log
+[6165] 03 Apr 16:45:17.676 . skiplist.c:57 SkipList refcount is at 0. Freeing up the structure
+SELECTED ACTION:__READ__
++-----------------------------+----------------+------------------------------+-------------------+
+|Random-READ    (done:100000, found:100000): 0.000000 sec/op; inf reads per sec(estimated); cost:0.000(sec)
+Keys:		16 bytes each
+Values: 	1000 bytes each
+Entries:	100000
+IndexSize:	2.4 MB (estimated)
+DataSize:	95.7 MB (estimated)
+---------------------------------------------------------------------------------------------------
+Date:		Mon Apr  3 16:45:29 2023
+CPU:		1 *  Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+CPUCache:	12288 KB
+
+[6172] 03 Apr 16:45:29.082 . file.c:200 Creating directory structure: testdb/si
+[6172] 03 Apr 16:45:29.086 . file.c:65 Mapping of 195 bytes for testdb/si/manifest
+[6172] 03 Apr 16:45:29.086 . sst.c:331 Loading SST file testdb/si/0/2396.sst for level 0 158168 bytes
+[6172] 03 Apr 16:45:29.086 . file.c:65 Mapping of 158168 bytes for testdb/si/0/2396.sst
+[6172] 03 Apr 16:45:29.086 - sst_loader.c:183 Index @ offset: 147485 size: 10611
+[6172] 03 Apr 16:45:29.086 - sst_loader.c:184 Meta Block @ offset: 147413 size: 72
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:201 Data size:        142081
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:203 Index size:       0
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:204 Key size:         35520
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:205 Num blocks size:  444
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:206 Num entries size: 2220
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:207 Value size:       2220000
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:210 Filter size:      5332
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:211 Bloom offset 142081 size: 5332
+[6172] 03 Apr 16:45:29.086 . sst.c:342 Smallest key: key-5780 Largest key: key-7999 seeks: 5
+[6172] 03 Apr 16:45:29.086 . sst.c:331 Loading SST file testdb/si/0/2397.sst for level 0 113927 bytes
+[6172] 03 Apr 16:45:29.086 . file.c:65 Mapping of 113927 bytes for testdb/si/0/2397.sst
+[6172] 03 Apr 16:45:29.086 - sst_loader.c:183 Index @ offset: 106244 size: 7611
+[6172] 03 Apr 16:45:29.086 - sst_loader.c:184 Meta Block @ offset: 106172 size: 72
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:201 Data size:        102340
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:203 Index size:       0
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:204 Key size:         25456
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:205 Num blocks size:  319
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:206 Num entries size: 1591
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:207 Value size:       1591000
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:210 Filter size:      3832
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:211 Bloom offset 102340 size: 3832
+[6172] 03 Apr 16:45:29.086 . sst.c:342 Smallest key: key-6409 Largest key: key-7999 seeks: 2
+[6172] 03 Apr 16:45:29.086 . sst.c:331 Loading SST file testdb/si/0/2398.sst for level 0 70779 bytes
+[6172] 03 Apr 16:45:29.086 . file.c:65 Mapping of 70779 bytes for testdb/si/0/2398.sst
+[6172] 03 Apr 16:45:29.086 - sst_loader.c:183 Index @ offset: 65999 size: 4708
+[6172] 03 Apr 16:45:29.086 - sst_loader.c:184 Meta Block @ offset: 65927 size: 72
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:201 Data size:        63547
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:203 Index size:       0
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:204 Key size:         15808
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:205 Num blocks size:  198
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:206 Num entries size: 988
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:207 Value size:       988000
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:210 Filter size:      2380
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:211 Bloom offset 63547 size: 2380
+[6172] 03 Apr 16:45:29.086 . sst.c:342 Smallest key: key-7012 Largest key: key-7999 seeks: 1
+[6172] 03 Apr 16:45:29.086 . sst.c:331 Loading SST file testdb/si/1/2395.sst for level 1 6128346 bytes
+[6172] 03 Apr 16:45:29.086 . file.c:65 Mapping of 6128346 bytes for testdb/si/1/2395.sst
+[6172] 03 Apr 16:45:29.086 - sst_loader.c:183 Index @ offset: 5707235 size: 421039
+[6172] 03 Apr 16:45:29.086 - sst_loader.c:184 Meta Block @ offset: 5707163 size: 72
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:201 Data size:        5501911
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:203 Index size:       0
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:204 Key size:         1368288
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:205 Num blocks size:  17104
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:206 Num entries size: 85518
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:207 Value size:       85518000
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:210 Filter size:      205252
+[6172] 03 Apr 16:45:29.086 . sst_loader.c:211 Bloom offset 5501911 size: 205252
+[6172] 03 Apr 16:45:29.089 . sst.c:342 Smallest key: key-0 Largest key: key-9999 seeks: 212
+[6172] 03 Apr 16:45:29.089 . sst.c:331 Loading SST file testdb/si/2/1520.sst for level 2 11483246 bytes
+[6172] 03 Apr 16:45:29.089 . file.c:65 Mapping of 11483246 bytes for testdb/si/2/1520.sst
+[6172] 03 Apr 16:45:29.089 - sst_loader.c:183 Index @ offset: 10689719 size: 793455
+[6172] 03 Apr 16:45:29.089 - sst_loader.c:184 Meta Block @ offset: 10689647 size: 72
+[6172] 03 Apr 16:45:29.089 . sst_loader.c:201 Data size:        10305643
+[6172] 03 Apr 16:45:29.089 . sst_loader.c:203 Index size:       0
+[6172] 03 Apr 16:45:29.089 . sst_loader.c:204 Key size:         2560000
+[6172] 03 Apr 16:45:29.089 . sst_loader.c:205 Num blocks size:  32000
+[6172] 03 Apr 16:45:29.089 . sst_loader.c:206 Num entries size: 160000
+[6172] 03 Apr 16:45:29.089 . sst_loader.c:207 Value size:       160000000
+[6172] 03 Apr 16:45:29.089 . sst_loader.c:210 Filter size:      384004
+[6172] 03 Apr 16:45:29.089 . sst_loader.c:211 Bloom offset 10305643 size: 384004
+[6172] 03 Apr 16:45:29.093 . sst.c:342 Smallest key: key-0 Largest key: key-99999 seeks: 100
+[6172] 03 Apr 16:45:29.094 . sst.c:51 --- Level 0 [  3 files, 334 KiB  ]---
+[6172] 03 Apr 16:45:29.094 . sst.c:60 Metadata filenum:2396 smallest: key-5780 largest: key-7999
+[6172] 03 Apr 16:45:29.094 . sst.c:60 Metadata filenum:2397 smallest: key-6409 largest: key-7999
+[6172] 03 Apr 16:45:29.094 . sst.c:60 Metadata filenum:2398 smallest: key-7012 largest: key-7999
+[6172] 03 Apr 16:45:29.094 . sst.c:51 --- Level 1 [  1 files,   5 MiB  ]---
+[6172] 03 Apr 16:45:29.094 . sst.c:60 Metadata filenum:2395 smallest: key-0 largest: key-9999
+[6172] 03 Apr 16:45:29.094 . sst.c:51 --- Level 2 [  1 files,  10 MiB  ]---
+[6172] 03 Apr 16:45:29.094 . sst.c:60 Metadata filenum:1520 smallest: key-0 largest: key-99999
+[6172] 03 Apr 16:45:29.094 . sst.c:51 --- Level 3 [  0 files,   0 bytes]---
+[6172] 03 Apr 16:45:29.094 . sst.c:51 --- Level 4 [  0 files,   0 bytes]---
+[6172] 03 Apr 16:45:29.094 . sst.c:51 --- Level 5 [  0 files,   0 bytes]---
+[6172] 03 Apr 16:45:29.094 . sst.c:51 --- Level 6 [  0 files,   0 bytes]---
+[6172] 03 Apr 16:45:29.567 . db.c:33 Closing database 0
+[6172] 03 Apr 16:45:29.567 . sst.c:415 Sending termination message to the detached thread
+[6172] 03 Apr 16:45:29.567 . sst.c:422 Waiting the merger thread
+[6172] 03 Apr 16:45:29.568 - sst.c:176 Exiting from the merge thread as user requested
+[6172] 03 Apr 16:45:29.568 - file.c:170 Truncating file testdb/si/manifest to 195 bytes
+[6172] 03 Apr 16:45:29.571 . log.c:46 Removing old log file testdb/si/0.log
+[6172] 03 Apr 16:45:29.571 . skiplist.c:57 SkipList refcount is at 0. Freeing up the structure
+SELECTED ACTION:__READ__
++-----------------------------+----------------+------------------------------+-------------------+
+|Random-READ    (done:100000, found:100000): 0.000000 sec/op; inf reads per sec(estimated); cost:0.000(sec)
+Keys:		16 bytes each
+Values: 	1000 bytes each
+Entries:	100000
+IndexSize:	2.4 MB (estimated)
+DataSize:	95.7 MB (estimated)
+---------------------------------------------------------------------------------------------------
+Date:		Mon Apr  3 16:45:37 2023
+CPU:		1 *  Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+CPUCache:	12288 KB
+
+[6184] 03 Apr 16:45:37.034 . file.c:200 Creating directory structure: testdb/si
+[6184] 03 Apr 16:45:37.038 . file.c:65 Mapping of 195 bytes for testdb/si/manifest
+[6184] 03 Apr 16:45:37.040 . sst.c:331 Loading SST file testdb/si/0/2396.sst for level 0 158168 bytes
+[6184] 03 Apr 16:45:37.040 . file.c:65 Mapping of 158168 bytes for testdb/si/0/2396.sst
+[6184] 03 Apr 16:45:37.040 - sst_loader.c:183 Index @ offset: 147485 size: 10611
+[6184] 03 Apr 16:45:37.040 - sst_loader.c:184 Meta Block @ offset: 147413 size: 72
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:201 Data size:        142081
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:203 Index size:       0
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:204 Key size:         35520
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:205 Num blocks size:  444
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:206 Num entries size: 2220
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:207 Value size:       2220000
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:210 Filter size:      5332
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:211 Bloom offset 142081 size: 5332
+[6184] 03 Apr 16:45:37.040 . sst.c:342 Smallest key: key-5780 Largest key: key-7999 seeks: 4
+[6184] 03 Apr 16:45:37.040 . sst.c:331 Loading SST file testdb/si/0/2397.sst for level 0 113927 bytes
+[6184] 03 Apr 16:45:37.040 . file.c:65 Mapping of 113927 bytes for testdb/si/0/2397.sst
+[6184] 03 Apr 16:45:37.040 - sst_loader.c:183 Index @ offset: 106244 size: 7611
+[6184] 03 Apr 16:45:37.040 - sst_loader.c:184 Meta Block @ offset: 106172 size: 72
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:201 Data size:        102340
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:203 Index size:       0
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:204 Key size:         25456
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:205 Num blocks size:  319
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:206 Num entries size: 1591
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:207 Value size:       1591000
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:210 Filter size:      3832
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:211 Bloom offset 102340 size: 3832
+[6184] 03 Apr 16:45:37.040 . sst.c:342 Smallest key: key-6409 Largest key: key-7999 seeks: 4
+[6184] 03 Apr 16:45:37.040 . sst.c:331 Loading SST file testdb/si/0/2398.sst for level 0 70779 bytes
+[6184] 03 Apr 16:45:37.040 . file.c:65 Mapping of 70779 bytes for testdb/si/0/2398.sst
+[6184] 03 Apr 16:45:37.040 - sst_loader.c:183 Index @ offset: 65999 size: 4708
+[6184] 03 Apr 16:45:37.040 - sst_loader.c:184 Meta Block @ offset: 65927 size: 72
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:201 Data size:        63547
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:203 Index size:       0
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:204 Key size:         15808
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:205 Num blocks size:  198
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:206 Num entries size: 988
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:207 Value size:       988000
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:210 Filter size:      2380
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:211 Bloom offset 63547 size: 2380
+[6184] 03 Apr 16:45:37.040 . sst.c:342 Smallest key: key-7012 Largest key: key-7999 seeks: 3
+[6184] 03 Apr 16:45:37.040 . sst.c:331 Loading SST file testdb/si/1/2395.sst for level 1 6128346 bytes
+[6184] 03 Apr 16:45:37.040 . file.c:65 Mapping of 6128346 bytes for testdb/si/1/2395.sst
+[6184] 03 Apr 16:45:37.040 - sst_loader.c:183 Index @ offset: 5707235 size: 421039
+[6184] 03 Apr 16:45:37.040 - sst_loader.c:184 Meta Block @ offset: 5707163 size: 72
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:201 Data size:        5501911
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:203 Index size:       0
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:204 Key size:         1368288
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:205 Num blocks size:  17104
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:206 Num entries size: 85518
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:207 Value size:       85518000
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:210 Filter size:      205252
+[6184] 03 Apr 16:45:37.040 . sst_loader.c:211 Bloom offset 5501911 size: 205252
+[6184] 03 Apr 16:45:37.042 . sst.c:342 Smallest key: key-0 Largest key: key-9999 seeks: 204
+[6184] 03 Apr 16:45:37.042 . sst.c:331 Loading SST file testdb/si/2/1520.sst for level 2 11483246 bytes
+[6184] 03 Apr 16:45:37.042 . file.c:65 Mapping of 11483246 bytes for testdb/si/2/1520.sst
+[6184] 03 Apr 16:45:37.042 - sst_loader.c:183 Index @ offset: 10689719 size: 793455
+[6184] 03 Apr 16:45:37.042 - sst_loader.c:184 Meta Block @ offset: 10689647 size: 72
+[6184] 03 Apr 16:45:37.042 . sst_loader.c:201 Data size:        10305643
+[6184] 03 Apr 16:45:37.043 . sst_loader.c:203 Index size:       0
+[6184] 03 Apr 16:45:37.043 . sst_loader.c:204 Key size:         2560000
+[6184] 03 Apr 16:45:37.043 . sst_loader.c:205 Num blocks size:  32000
+[6184] 03 Apr 16:45:37.043 . sst_loader.c:206 Num entries size: 160000
+[6184] 03 Apr 16:45:37.043 . sst_loader.c:207 Value size:       160000000
+[6184] 03 Apr 16:45:37.043 . sst_loader.c:210 Filter size:      384004
+[6184] 03 Apr 16:45:37.043 . sst_loader.c:211 Bloom offset 10305643 size: 384004
+[6184] 03 Apr 16:45:37.047 . sst.c:342 Smallest key: key-0 Largest key: key-99999 seeks: 100
+[6184] 03 Apr 16:45:37.047 . sst.c:51 --- Level 0 [  3 files, 334 KiB  ]---
+[6184] 03 Apr 16:45:37.047 . sst.c:60 Metadata filenum:2396 smallest: key-5780 largest: key-7999
+[6184] 03 Apr 16:45:37.047 . sst.c:60 Metadata filenum:2397 smallest: key-6409 largest: key-7999
+[6184] 03 Apr 16:45:37.047 . sst.c:60 Metadata filenum:2398 smallest: key-7012 largest: key-7999
+[6184] 03 Apr 16:45:37.047 . sst.c:51 --- Level 1 [  1 files,   5 MiB  ]---
+[6184] 03 Apr 16:45:37.047 . sst.c:60 Metadata filenum:2395 smallest: key-0 largest: key-9999
+[6184] 03 Apr 16:45:37.047 . sst.c:51 --- Level 2 [  1 files,  10 MiB  ]---
+[6184] 03 Apr 16:45:37.047 . sst.c:60 Metadata filenum:1520 smallest: key-0 largest: key-99999
+[6184] 03 Apr 16:45:37.047 . sst.c:51 --- Level 3 [  0 files,   0 bytes]---
+[6184] 03 Apr 16:45:37.047 . sst.c:51 --- Level 4 [  0 files,   0 bytes]---
+[6184] 03 Apr 16:45:37.047 . sst.c:51 --- Level 5 [  0 files,   0 bytes]---
+[6184] 03 Apr 16:45:37.047 . sst.c:51 --- Level 6 [  0 files,   0 bytes]---
+[6184] 03 Apr 16:45:37.446 . db.c:33 Closing database 0
+[6184] 03 Apr 16:45:37.446 . sst.c:415 Sending termination message to the detached thread
+[6184] 03 Apr 16:45:37.446 . sst.c:422 Waiting the merger thread
+[6184] 03 Apr 16:45:37.446 - sst.c:176 Exiting from the merge thread as user requested
+[6184] 03 Apr 16:45:37.446 - file.c:170 Truncating file testdb/si/manifest to 194 bytes
+[6184] 03 Apr 16:45:37.451 . log.c:46 Removing old log file testdb/si/0.log
+[6184] 03 Apr 16:45:37.451 . skiplist.c:57 SkipList refcount is at 0. Freeing up the structure
+SELECTED ACTION:__READ__
++-----------------------------+----------------+------------------------------+-------------------+
+|Random-READ    (done:100000, found:100000): 0.000000 sec/op; inf reads per sec(estimated); cost:0.000(sec)
+Keys:		16 bytes each
+Values: 	1000 bytes each
+Entries:	100000
+IndexSize:	2.4 MB (estimated)
+DataSize:	95.7 MB (estimated)
+---------------------------------------------------------------------------------------------------
+Date:		Mon Apr  3 16:45:48 2023
+CPU:		1 *  Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+CPUCache:	12288 KB
+
+[6208] 03 Apr 16:45:48.530 . file.c:200 Creating directory structure: testdb/si
+[6208] 03 Apr 16:45:48.535 . file.c:65 Mapping of 194 bytes for testdb/si/manifest
+[6208] 03 Apr 16:45:48.535 . sst.c:331 Loading SST file testdb/si/0/2396.sst for level 0 158168 bytes
+[6208] 03 Apr 16:45:48.535 . file.c:65 Mapping of 158168 bytes for testdb/si/0/2396.sst
+[6208] 03 Apr 16:45:48.535 - sst_loader.c:183 Index @ offset: 147485 size: 10611
+[6208] 03 Apr 16:45:48.535 - sst_loader.c:184 Meta Block @ offset: 147413 size: 72
+[6208] 03 Apr 16:45:48.535 . sst_loader.c:201 Data size:        142081
+[6208] 03 Apr 16:45:48.535 . sst_loader.c:203 Index size:       0
+[6208] 03 Apr 16:45:48.535 . sst_loader.c:204 Key size:         35520
+[6208] 03 Apr 16:45:48.535 . sst_loader.c:205 Num blocks size:  444
+[6208] 03 Apr 16:45:48.535 . sst_loader.c:206 Num entries size: 2220
+[6208] 03 Apr 16:45:48.535 . sst_loader.c:207 Value size:       2220000
+[6208] 03 Apr 16:45:48.535 . sst_loader.c:210 Filter size:      5332
+[6208] 03 Apr 16:45:48.535 . sst_loader.c:211 Bloom offset 142081 size: 5332
+[6208] 03 Apr 16:45:48.536 . sst.c:342 Smallest key: key-5780 Largest key: key-7999 seeks: 9
+[6208] 03 Apr 16:45:48.536 . sst.c:331 Loading SST file testdb/si/0/2397.sst for level 0 113927 bytes
+[6208] 03 Apr 16:45:48.536 . file.c:65 Mapping of 113927 bytes for testdb/si/0/2397.sst
+[6208] 03 Apr 16:45:48.536 - sst_loader.c:183 Index @ offset: 106244 size: 7611
+[6208] 03 Apr 16:45:48.536 - sst_loader.c:184 Meta Block @ offset: 106172 size: 72
+[6208] 03 Apr 16:45:48.536 . sst_loader.c:201 Data size:        102340
+[6208] 03 Apr 16:45:48.536 . sst_loader.c:203 Index size:       0
+[6208] 03 Apr 16:45:48.536 . sst_loader.c:204 Key size:         25456
+[6208] 03 Apr 16:45:48.536 . sst_loader.c:205 Num blocks size:  319
+[6208] 03 Apr 16:45:48.536 . sst_loader.c:206 Num entries size: 1591
+[6208] 03 Apr 16:45:48.536 . sst_loader.c:207 Value size:       1591000
+[6208] 03 Apr 16:45:48.536 . sst_loader.c:210 Filter size:      3832
+[6208] 03 Apr 16:45:48.536 . sst_loader.c:211 Bloom offset 102340 size: 3832
+[6208] 03 Apr 16:45:48.536 . sst.c:342 Smallest key: key-6409 Largest key: key-7999 seeks: 2
+[6208] 03 Apr 16:45:48.536 . sst.c:331 Loading SST file testdb/si/0/2398.sst for level 0 70779 bytes
+[6208] 03 Apr 16:45:48.536 . file.c:65 Mapping of 70779 bytes for testdb/si/0/2398.sst
+[6208] 03 Apr 16:45:48.536 - sst_loader.c:183 Index @ offset: 65999 size: 4708
+[6208] 03 Apr 16:45:48.536 - sst_loader.c:184 Meta Block @ offset: 65927 size: 72
+[6208] 03 Apr 16:45:48.536 . sst_loader.c:201 Data size:        63547
+[6208] 03 Apr 16:45:48.536 . sst_loader.c:203 Index size:       0
+[6208] 03 Apr 16:45:48.536 . sst_loader.c:204 Key size:         15808
+[6208] 03 Apr 16:45:48.536 . sst_loader.c:205 Num blocks size:  198
+[6208] 03 Apr 16:45:48.536 . sst_loader.c:206 Num entries size: 988
+[6208] 03 Apr 16:45:48.536 . sst_loader.c:207 Value size:       988000
+[6208] 03 Apr 16:45:48.536 . sst_loader.c:210 Filter size:      2380
+[6208] 03 Apr 16:45:48.536 . sst_loader.c:211 Bloom offset 63547 size: 2380
+[6208] 03 Apr 16:45:48.536 . sst.c:342 Smallest key: key-7012 Largest key: key-7999 seeks: 3
+[6208] 03 Apr 16:45:48.536 . sst.c:331 Loading SST file testdb/si/1/2395.sst for level 1 6128346 bytes
+[6208] 03 Apr 16:45:48.536 . file.c:65 Mapping of 6128346 bytes for testdb/si/1/2395.sst
+[6208] 03 Apr 16:45:48.536 - sst_loader.c:183 Index @ offset: 5707235 size: 421039
+[6208] 03 Apr 16:45:48.536 - sst_loader.c:184 Meta Block @ offset: 5707163 size: 72
+[6208] 03 Apr 16:45:48.536 . sst_loader.c:201 Data size:        5501911
+[6208] 03 Apr 16:45:48.536 . sst_loader.c:203 Index size:       0
+[6208] 03 Apr 16:45:48.536 . sst_loader.c:204 Key size:         1368288
+[6208] 03 Apr 16:45:48.536 . sst_loader.c:205 Num blocks size:  17104
+[6208] 03 Apr 16:45:48.536 . sst_loader.c:206 Num entries size: 85518
+[6208] 03 Apr 16:45:48.536 . sst_loader.c:207 Value size:       85518000
+[6208] 03 Apr 16:45:48.536 . sst_loader.c:210 Filter size:      205252
+[6208] 03 Apr 16:45:48.536 . sst_loader.c:211 Bloom offset 5501911 size: 205252
+[6208] 03 Apr 16:45:48.538 . sst.c:342 Smallest key: key-0 Largest key: key-9999 seeks: 62
+[6208] 03 Apr 16:45:48.538 . sst.c:331 Loading SST file testdb/si/2/1520.sst for level 2 11483246 bytes
+[6208] 03 Apr 16:45:48.538 . file.c:65 Mapping of 11483246 bytes for testdb/si/2/1520.sst
+[6208] 03 Apr 16:45:48.538 - sst_loader.c:183 Index @ offset: 10689719 size: 793455
+[6208] 03 Apr 16:45:48.538 - sst_loader.c:184 Meta Block @ offset: 10689647 size: 72
+[6208] 03 Apr 16:45:48.538 . sst_loader.c:201 Data size:        10305643
+[6208] 03 Apr 16:45:48.538 . sst_loader.c:203 Index size:       0
+[6208] 03 Apr 16:45:48.538 . sst_loader.c:204 Key size:         2560000
+[6208] 03 Apr 16:45:48.538 . sst_loader.c:205 Num blocks size:  32000
+[6208] 03 Apr 16:45:48.538 . sst_loader.c:206 Num entries size: 160000
+[6208] 03 Apr 16:45:48.538 . sst_loader.c:207 Value size:       160000000
+[6208] 03 Apr 16:45:48.538 . sst_loader.c:210 Filter size:      384004
+[6208] 03 Apr 16:45:48.538 . sst_loader.c:211 Bloom offset 10305643 size: 384004
+[6208] 03 Apr 16:45:48.543 . sst.c:342 Smallest key: key-0 Largest key: key-99999 seeks: 100
+[6208] 03 Apr 16:45:48.543 . sst.c:51 --- Level 0 [  3 files, 334 KiB  ]---
+[6208] 03 Apr 16:45:48.543 . sst.c:60 Metadata filenum:2396 smallest: key-5780 largest: key-7999
+[6208] 03 Apr 16:45:48.543 . sst.c:60 Metadata filenum:2397 smallest: key-6409 largest: key-7999
+[6208] 03 Apr 16:45:48.543 . sst.c:60 Metadata filenum:2398 smallest: key-7012 largest: key-7999
+[6208] 03 Apr 16:45:48.543 . sst.c:51 --- Level 1 [  1 files,   5 MiB  ]---
+[6208] 03 Apr 16:45:48.543 . sst.c:60 Metadata filenum:2395 smallest: key-0 largest: key-9999
+[6208] 03 Apr 16:45:48.543 . sst.c:51 --- Level 2 [  1 files,  10 MiB  ]---
+[6208] 03 Apr 16:45:48.543 . sst.c:60 Metadata filenum:1520 smallest: key-0 largest: key-99999
+[6208] 03 Apr 16:45:48.543 . sst.c:51 --- Level 3 [  0 files,   0 bytes]---
+[6208] 03 Apr 16:45:48.543 . sst.c:51 --- Level 4 [  0 files,   0 bytes]---
+[6208] 03 Apr 16:45:48.543 . sst.c:51 --- Level 5 [  0 files,   0 bytes]---
+[6208] 03 Apr 16:45:48.543 . sst.c:51 --- Level 6 [  0 files,   0 bytes]---
+[6208] 03 Apr 16:45:48.903 . db.c:33 Closing database 0
+[6208] 03 Apr 16:45:48.903 . sst.c:415 Sending termination message to the detached thread
+[6208] 03 Apr 16:45:48.903 . sst.c:422 Waiting the merger thread
+[6208] 03 Apr 16:45:48.903 - sst.c:176 Exiting from the merge thread as user requested
+[6208] 03 Apr 16:45:48.903 - file.c:170 Truncating file testdb/si/manifest to 195 bytes
+[6208] 03 Apr 16:45:48.905 . log.c:46 Removing old log file testdb/si/0.log
+[6208] 03 Apr 16:45:48.905 . skiplist.c:57 SkipList refcount is at 0. Freeing up the structure
+SELECTED ACTION:__READ__
++-----------------------------+----------------+------------------------------+-------------------+
+|Random-READ    (done:100000, found:100000): 0.000000 sec/op; inf reads per sec(estimated); cost:0.000(sec)
+Keys:		16 bytes each
+Values: 	1000 bytes each
+Entries:	100000
+IndexSize:	2.4 MB (estimated)
+DataSize:	95.7 MB (estimated)
+---------------------------------------------------------------------------------------------------
+Date:		Mon Apr  3 16:45:57 2023
+CPU:		1 *  Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+CPUCache:	12288 KB
+
+[6260] 03 Apr 16:45:57.610 . file.c:200 Creating directory structure: testdb/si
+[6260] 03 Apr 16:45:57.614 . file.c:65 Mapping of 195 bytes for testdb/si/manifest
+[6260] 03 Apr 16:45:57.614 . sst.c:331 Loading SST file testdb/si/0/2396.sst for level 0 158168 bytes
+[6260] 03 Apr 16:45:57.614 . file.c:65 Mapping of 158168 bytes for testdb/si/0/2396.sst
+[6260] 03 Apr 16:45:57.614 - sst_loader.c:183 Index @ offset: 147485 size: 10611
+[6260] 03 Apr 16:45:57.614 - sst_loader.c:184 Meta Block @ offset: 147413 size: 72
+[6260] 03 Apr 16:45:57.614 . sst_loader.c:201 Data size:        142081
+[6260] 03 Apr 16:45:57.614 . sst_loader.c:203 Index size:       0
+[6260] 03 Apr 16:45:57.614 . sst_loader.c:204 Key size:         35520
+[6260] 03 Apr 16:45:57.614 . sst_loader.c:205 Num blocks size:  444
+[6260] 03 Apr 16:45:57.614 . sst_loader.c:206 Num entries size: 2220
+[6260] 03 Apr 16:45:57.614 . sst_loader.c:207 Value size:       2220000
+[6260] 03 Apr 16:45:57.614 . sst_loader.c:210 Filter size:      5332
+[6260] 03 Apr 16:45:57.614 . sst_loader.c:211 Bloom offset 142081 size: 5332
+[6260] 03 Apr 16:45:57.615 . sst.c:342 Smallest key: key-5780 Largest key: key-7999 seeks: 8
+[6260] 03 Apr 16:45:57.615 . sst.c:331 Loading SST file testdb/si/0/2397.sst for level 0 113927 bytes
+[6260] 03 Apr 16:45:57.615 . file.c:65 Mapping of 113927 bytes for testdb/si/0/2397.sst
+[6260] 03 Apr 16:45:57.615 - sst_loader.c:183 Index @ offset: 106244 size: 7611
+[6260] 03 Apr 16:45:57.615 - sst_loader.c:184 Meta Block @ offset: 106172 size: 72
+[6260] 03 Apr 16:45:57.615 . sst_loader.c:201 Data size:        102340
+[6260] 03 Apr 16:45:57.615 . sst_loader.c:203 Index size:       0
+[6260] 03 Apr 16:45:57.615 . sst_loader.c:204 Key size:         25456
+[6260] 03 Apr 16:45:57.615 . sst_loader.c:205 Num blocks size:  319
+[6260] 03 Apr 16:45:57.615 . sst_loader.c:206 Num entries size: 1591
+[6260] 03 Apr 16:45:57.615 . sst_loader.c:207 Value size:       1591000
+[6260] 03 Apr 16:45:57.615 . sst_loader.c:210 Filter size:      3832
+[6260] 03 Apr 16:45:57.615 . sst_loader.c:211 Bloom offset 102340 size: 3832
+[6260] 03 Apr 16:45:57.615 . sst.c:342 Smallest key: key-6409 Largest key: key-7999 seeks: 6
+[6260] 03 Apr 16:45:57.615 . sst.c:331 Loading SST file testdb/si/0/2398.sst for level 0 70779 bytes
+[6260] 03 Apr 16:45:57.615 . file.c:65 Mapping of 70779 bytes for testdb/si/0/2398.sst
+[6260] 03 Apr 16:45:57.615 - sst_loader.c:183 Index @ offset: 65999 size: 4708
+[6260] 03 Apr 16:45:57.615 - sst_loader.c:184 Meta Block @ offset: 65927 size: 72
+[6260] 03 Apr 16:45:57.615 . sst_loader.c:201 Data size:        63547
+[6260] 03 Apr 16:45:57.615 . sst_loader.c:203 Index size:       0
+[6260] 03 Apr 16:45:57.615 . sst_loader.c:204 Key size:         15808
+[6260] 03 Apr 16:45:57.615 . sst_loader.c:205 Num blocks size:  198
+[6260] 03 Apr 16:45:57.615 . sst_loader.c:206 Num entries size: 988
+[6260] 03 Apr 16:45:57.615 . sst_loader.c:207 Value size:       988000
+[6260] 03 Apr 16:45:57.615 . sst_loader.c:210 Filter size:      2380
+[6260] 03 Apr 16:45:57.615 . sst_loader.c:211 Bloom offset 63547 size: 2380
+[6260] 03 Apr 16:45:57.615 . sst.c:342 Smallest key: key-7012 Largest key: key-7999 seeks: 1
+[6260] 03 Apr 16:45:57.615 . sst.c:331 Loading SST file testdb/si/1/2395.sst for level 1 6128346 bytes
+[6260] 03 Apr 16:45:57.615 . file.c:65 Mapping of 6128346 bytes for testdb/si/1/2395.sst
+[6260] 03 Apr 16:45:57.615 - sst_loader.c:183 Index @ offset: 5707235 size: 421039
+[6260] 03 Apr 16:45:57.615 - sst_loader.c:184 Meta Block @ offset: 5707163 size: 72
+[6260] 03 Apr 16:45:57.615 . sst_loader.c:201 Data size:        5501911
+[6260] 03 Apr 16:45:57.615 . sst_loader.c:203 Index size:       0
+[6260] 03 Apr 16:45:57.615 . sst_loader.c:204 Key size:         1368288
+[6260] 03 Apr 16:45:57.615 . sst_loader.c:205 Num blocks size:  17104
+[6260] 03 Apr 16:45:57.615 . sst_loader.c:206 Num entries size: 85518
+[6260] 03 Apr 16:45:57.615 . sst_loader.c:207 Value size:       85518000
+[6260] 03 Apr 16:45:57.615 . sst_loader.c:210 Filter size:      205252
+[6260] 03 Apr 16:45:57.615 . sst_loader.c:211 Bloom offset 5501911 size: 205252
+[6260] 03 Apr 16:45:57.617 . sst.c:342 Smallest key: key-0 Largest key: key-9999 seeks: 294
+[6260] 03 Apr 16:45:57.617 . sst.c:331 Loading SST file testdb/si/2/1520.sst for level 2 11483246 bytes
+[6260] 03 Apr 16:45:57.617 . file.c:65 Mapping of 11483246 bytes for testdb/si/2/1520.sst
+[6260] 03 Apr 16:45:57.617 - sst_loader.c:183 Index @ offset: 10689719 size: 793455
+[6260] 03 Apr 16:45:57.617 - sst_loader.c:184 Meta Block @ offset: 10689647 size: 72
+[6260] 03 Apr 16:45:57.617 . sst_loader.c:201 Data size:        10305643
+[6260] 03 Apr 16:45:57.617 . sst_loader.c:203 Index size:       0
+[6260] 03 Apr 16:45:57.617 . sst_loader.c:204 Key size:         2560000
+[6260] 03 Apr 16:45:57.617 . sst_loader.c:205 Num blocks size:  32000
+[6260] 03 Apr 16:45:57.617 . sst_loader.c:206 Num entries size: 160000
+[6260] 03 Apr 16:45:57.617 . sst_loader.c:207 Value size:       160000000
+[6260] 03 Apr 16:45:57.617 . sst_loader.c:210 Filter size:      384004
+[6260] 03 Apr 16:45:57.617 . sst_loader.c:211 Bloom offset 10305643 size: 384004
+[6260] 03 Apr 16:45:57.621 . sst.c:342 Smallest key: key-0 Largest key: key-99999 seeks: 100
+[6260] 03 Apr 16:45:57.622 . sst.c:51 --- Level 0 [  3 files, 334 KiB  ]---
+[6260] 03 Apr 16:45:57.622 . sst.c:60 Metadata filenum:2396 smallest: key-5780 largest: key-7999
+[6260] 03 Apr 16:45:57.622 . sst.c:60 Metadata filenum:2397 smallest: key-6409 largest: key-7999
+[6260] 03 Apr 16:45:57.622 . sst.c:60 Metadata filenum:2398 smallest: key-7012 largest: key-7999
+[6260] 03 Apr 16:45:57.622 . sst.c:51 --- Level 1 [  1 files,   5 MiB  ]---
+[6260] 03 Apr 16:45:57.622 . sst.c:60 Metadata filenum:2395 smallest: key-0 largest: key-9999
+[6260] 03 Apr 16:45:57.622 . sst.c:51 --- Level 2 [  1 files,  10 MiB  ]---
+[6260] 03 Apr 16:45:57.622 . sst.c:60 Metadata filenum:1520 smallest: key-0 largest: key-99999
+[6260] 03 Apr 16:45:57.622 . sst.c:51 --- Level 3 [  0 files,   0 bytes]---
+[6260] 03 Apr 16:45:57.622 . sst.c:51 --- Level 4 [  0 files,   0 bytes]---
+[6260] 03 Apr 16:45:57.622 . sst.c:51 --- Level 5 [  0 files,   0 bytes]---
+[6260] 03 Apr 16:45:57.622 . sst.c:51 --- Level 6 [  0 files,   0 bytes]---
+[6260] 03 Apr 16:45:58.019 . db.c:33 Closing database 0
+[6260] 03 Apr 16:45:58.019 . sst.c:415 Sending termination message to the detached thread
+[6260] 03 Apr 16:45:58.019 . sst.c:422 Waiting the merger thread
+[6260] 03 Apr 16:45:58.019 - sst.c:176 Exiting from the merge thread as user requested
+[6260] 03 Apr 16:45:58.019 - file.c:170 Truncating file testdb/si/manifest to 195 bytes
+[6260] 03 Apr 16:45:58.021 . log.c:46 Removing old log file testdb/si/0.log
+[6260] 03 Apr 16:45:58.021 . skiplist.c:57 SkipList refcount is at 0. Freeing up the structure
+SELECTED ACTION:__READ__
++-----------------------------+----------------+------------------------------+-------------------+
+|Random-READ    (done:100000, found:100000): 0.000190 sec/op; 5263.2 reads per sec(estimated); cost:19.000(sec)
+Keys:		16 bytes each
+Values: 	1000 bytes each
+Entries:	200000
+IndexSize:	4.8 MB (estimated)
+DataSize:	191.5 MB (estimated)
+---------------------------------------------------------------------------------------------------
+Date:		Mon Apr  3 16:51:16 2023
+CPU:		1 *  Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+CPUCache:	12288 KB
+
+[6380] 03 Apr 16:51:16.953 . file.c:200 Creating directory structure: testdb/si
+[6380] 03 Apr 16:51:16.959 . file.c:65 Mapping of 195 bytes for testdb/si/manifest
+[6380] 03 Apr 16:51:16.959 . sst.c:331 Loading SST file testdb/si/0/2396.sst for level 0 158168 bytes
+[6380] 03 Apr 16:51:16.959 . file.c:65 Mapping of 158168 bytes for testdb/si/0/2396.sst
+[6380] 03 Apr 16:51:16.959 - sst_loader.c:183 Index @ offset: 147485 size: 10611
+[6380] 03 Apr 16:51:16.959 - sst_loader.c:184 Meta Block @ offset: 147413 size: 72
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:201 Data size:        142081
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:203 Index size:       0
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:204 Key size:         35520
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:205 Num blocks size:  444
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:206 Num entries size: 2220
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:207 Value size:       2220000
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:210 Filter size:      5332
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:211 Bloom offset 142081 size: 5332
+[6380] 03 Apr 16:51:16.959 . sst.c:342 Smallest key: key-5780 Largest key: key-7999 seeks: 6
+[6380] 03 Apr 16:51:16.959 . sst.c:331 Loading SST file testdb/si/0/2397.sst for level 0 113927 bytes
+[6380] 03 Apr 16:51:16.959 . file.c:65 Mapping of 113927 bytes for testdb/si/0/2397.sst
+[6380] 03 Apr 16:51:16.959 - sst_loader.c:183 Index @ offset: 106244 size: 7611
+[6380] 03 Apr 16:51:16.959 - sst_loader.c:184 Meta Block @ offset: 106172 size: 72
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:201 Data size:        102340
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:203 Index size:       0
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:204 Key size:         25456
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:205 Num blocks size:  319
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:206 Num entries size: 1591
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:207 Value size:       1591000
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:210 Filter size:      3832
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:211 Bloom offset 102340 size: 3832
+[6380] 03 Apr 16:51:16.959 . sst.c:342 Smallest key: key-6409 Largest key: key-7999 seeks: 2
+[6380] 03 Apr 16:51:16.959 . sst.c:331 Loading SST file testdb/si/0/2398.sst for level 0 70779 bytes
+[6380] 03 Apr 16:51:16.959 . file.c:65 Mapping of 70779 bytes for testdb/si/0/2398.sst
+[6380] 03 Apr 16:51:16.959 - sst_loader.c:183 Index @ offset: 65999 size: 4708
+[6380] 03 Apr 16:51:16.959 - sst_loader.c:184 Meta Block @ offset: 65927 size: 72
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:201 Data size:        63547
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:203 Index size:       0
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:204 Key size:         15808
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:205 Num blocks size:  198
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:206 Num entries size: 988
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:207 Value size:       988000
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:210 Filter size:      2380
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:211 Bloom offset 63547 size: 2380
+[6380] 03 Apr 16:51:16.959 . sst.c:342 Smallest key: key-7012 Largest key: key-7999 seeks: 1
+[6380] 03 Apr 16:51:16.959 . sst.c:331 Loading SST file testdb/si/1/2395.sst for level 1 6128346 bytes
+[6380] 03 Apr 16:51:16.959 . file.c:65 Mapping of 6128346 bytes for testdb/si/1/2395.sst
+[6380] 03 Apr 16:51:16.959 - sst_loader.c:183 Index @ offset: 5707235 size: 421039
+[6380] 03 Apr 16:51:16.959 - sst_loader.c:184 Meta Block @ offset: 5707163 size: 72
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:201 Data size:        5501911
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:203 Index size:       0
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:204 Key size:         1368288
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:205 Num blocks size:  17104
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:206 Num entries size: 85518
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:207 Value size:       85518000
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:210 Filter size:      205252
+[6380] 03 Apr 16:51:16.959 . sst_loader.c:211 Bloom offset 5501911 size: 205252
+[6380] 03 Apr 16:51:16.962 . sst.c:342 Smallest key: key-0 Largest key: key-9999 seeks: 152
+[6380] 03 Apr 16:51:16.962 . sst.c:331 Loading SST file testdb/si/2/1520.sst for level 2 11483246 bytes
+[6380] 03 Apr 16:51:16.962 . file.c:65 Mapping of 11483246 bytes for testdb/si/2/1520.sst
+[6380] 03 Apr 16:51:16.962 - sst_loader.c:183 Index @ offset: 10689719 size: 793455
+[6380] 03 Apr 16:51:16.962 - sst_loader.c:184 Meta Block @ offset: 10689647 size: 72
+[6380] 03 Apr 16:51:16.962 . sst_loader.c:201 Data size:        10305643
+[6380] 03 Apr 16:51:16.962 . sst_loader.c:203 Index size:       0
+[6380] 03 Apr 16:51:16.962 . sst_loader.c:204 Key size:         2560000
+[6380] 03 Apr 16:51:16.962 . sst_loader.c:205 Num blocks size:  32000
+[6380] 03 Apr 16:51:16.962 . sst_loader.c:206 Num entries size: 160000
+[6380] 03 Apr 16:51:16.962 . sst_loader.c:207 Value size:       160000000
+[6380] 03 Apr 16:51:16.962 . sst_loader.c:210 Filter size:      384004
+[6380] 03 Apr 16:51:16.962 . sst_loader.c:211 Bloom offset 10305643 size: 384004
+[6380] 03 Apr 16:51:16.967 . sst.c:342 Smallest key: key-0 Largest key: key-99999 seeks: 100
+[6380] 03 Apr 16:51:16.968 . sst.c:51 --- Level 0 [  3 files, 334 KiB  ]---
+[6380] 03 Apr 16:51:16.968 . sst.c:60 Metadata filenum:2396 smallest: key-5780 largest: key-7999
+[6380] 03 Apr 16:51:16.968 . sst.c:60 Metadata filenum:2397 smallest: key-6409 largest: key-7999
+[6380] 03 Apr 16:51:16.968 . sst.c:60 Metadata filenum:2398 smallest: key-7012 largest: key-7999
+[6380] 03 Apr 16:51:16.968 . sst.c:51 --- Level 1 [  1 files,   5 MiB  ]---
+[6380] 03 Apr 16:51:16.968 . sst.c:60 Metadata filenum:2395 smallest: key-0 largest: key-9999
+[6380] 03 Apr 16:51:16.968 . sst.c:51 --- Level 2 [  1 files,  10 MiB  ]---
+[6380] 03 Apr 16:51:16.968 . sst.c:60 Metadata filenum:1520 smallest: key-0 largest: key-99999
+[6380] 03 Apr 16:51:16.968 . sst.c:51 --- Level 3 [  0 files,   0 bytes]---
+[6380] 03 Apr 16:51:16.968 . sst.c:51 --- Level 4 [  0 files,   0 bytes]---
+[6380] 03 Apr 16:51:16.968 . sst.c:51 --- Level 5 [  0 files,   0 bytes]---
+[6380] 03 Apr 16:51:16.968 . sst.c:51 --- Level 6 [  0 files,   0 bytes]---
+[6380] 03 Apr 16:51:18.263 . db.c:33 Closing database 0
+[6380] 03 Apr 16:51:18.263 . sst.c:415 Sending termination message to the detached thread
+[6380] 03 Apr 16:51:18.263 . sst.c:422 Waiting the merger thread
+[6380] 03 Apr 16:51:18.263 - sst.c:176 Exiting from the merge thread as user requested
+[6380] 03 Apr 16:51:18.263 - file.c:170 Truncating file testdb/si/manifest to 194 bytes
+[6380] 03 Apr 16:51:18.275 . log.c:46 Removing old log file testdb/si/0.log
+[6380] 03 Apr 16:51:18.275 . skiplist.c:57 SkipList refcount is at 0. Freeing up the structure
+SELECTED ACTION:__READ__
++-----------------------------+----------------+------------------------------+-------------------+
+|Random-READ    (done:200000, found:200000): 0.000050 sec/op; 20000.0 reads per sec(estimated); cost:10.000(sec)
+Keys:		16 bytes each
+Values: 	1000 bytes each
+Entries:	200000
+IndexSize:	4.8 MB (estimated)
+DataSize:	191.5 MB (estimated)
+---------------------------------------------------------------------------------------------------
+Date:		Mon Apr  3 16:52:27 2023
+CPU:		1 *  Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+CPUCache:	12288 KB
+
+[6396] 03 Apr 16:52:27.329 . file.c:200 Creating directory structure: testdb/si
+[6396] 03 Apr 16:52:27.335 . file.c:65 Mapping of 194 bytes for testdb/si/manifest
+[6396] 03 Apr 16:52:27.335 . sst.c:331 Loading SST file testdb/si/0/2396.sst for level 0 158168 bytes
+[6396] 03 Apr 16:52:27.335 . file.c:65 Mapping of 158168 bytes for testdb/si/0/2396.sst
+[6396] 03 Apr 16:52:27.335 - sst_loader.c:183 Index @ offset: 147485 size: 10611
+[6396] 03 Apr 16:52:27.335 - sst_loader.c:184 Meta Block @ offset: 147413 size: 72
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:201 Data size:        142081
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:203 Index size:       0
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:204 Key size:         35520
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:205 Num blocks size:  444
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:206 Num entries size: 2220
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:207 Value size:       2220000
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:210 Filter size:      5332
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:211 Bloom offset 142081 size: 5332
+[6396] 03 Apr 16:52:27.335 . sst.c:342 Smallest key: key-5780 Largest key: key-7999 seeks: 1
+[6396] 03 Apr 16:52:27.335 . sst.c:331 Loading SST file testdb/si/0/2397.sst for level 0 113927 bytes
+[6396] 03 Apr 16:52:27.335 . file.c:65 Mapping of 113927 bytes for testdb/si/0/2397.sst
+[6396] 03 Apr 16:52:27.335 - sst_loader.c:183 Index @ offset: 106244 size: 7611
+[6396] 03 Apr 16:52:27.335 - sst_loader.c:184 Meta Block @ offset: 106172 size: 72
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:201 Data size:        102340
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:203 Index size:       0
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:204 Key size:         25456
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:205 Num blocks size:  319
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:206 Num entries size: 1591
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:207 Value size:       1591000
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:210 Filter size:      3832
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:211 Bloom offset 102340 size: 3832
+[6396] 03 Apr 16:52:27.335 . sst.c:342 Smallest key: key-6409 Largest key: key-7999 seeks: 6
+[6396] 03 Apr 16:52:27.335 . sst.c:331 Loading SST file testdb/si/0/2398.sst for level 0 70779 bytes
+[6396] 03 Apr 16:52:27.335 . file.c:65 Mapping of 70779 bytes for testdb/si/0/2398.sst
+[6396] 03 Apr 16:52:27.335 - sst_loader.c:183 Index @ offset: 65999 size: 4708
+[6396] 03 Apr 16:52:27.335 - sst_loader.c:184 Meta Block @ offset: 65927 size: 72
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:201 Data size:        63547
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:203 Index size:       0
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:204 Key size:         15808
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:205 Num blocks size:  198
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:206 Num entries size: 988
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:207 Value size:       988000
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:210 Filter size:      2380
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:211 Bloom offset 63547 size: 2380
+[6396] 03 Apr 16:52:27.335 . sst.c:342 Smallest key: key-7012 Largest key: key-7999 seeks: 2
+[6396] 03 Apr 16:52:27.335 . sst.c:331 Loading SST file testdb/si/1/2395.sst for level 1 6128346 bytes
+[6396] 03 Apr 16:52:27.335 . file.c:65 Mapping of 6128346 bytes for testdb/si/1/2395.sst
+[6396] 03 Apr 16:52:27.335 - sst_loader.c:183 Index @ offset: 5707235 size: 421039
+[6396] 03 Apr 16:52:27.335 - sst_loader.c:184 Meta Block @ offset: 5707163 size: 72
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:201 Data size:        5501911
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:203 Index size:       0
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:204 Key size:         1368288
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:205 Num blocks size:  17104
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:206 Num entries size: 85518
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:207 Value size:       85518000
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:210 Filter size:      205252
+[6396] 03 Apr 16:52:27.335 . sst_loader.c:211 Bloom offset 5501911 size: 205252
+[6396] 03 Apr 16:52:27.338 . sst.c:342 Smallest key: key-0 Largest key: key-9999 seeks: 122
+[6396] 03 Apr 16:52:27.338 . sst.c:331 Loading SST file testdb/si/2/1520.sst for level 2 11483246 bytes
+[6396] 03 Apr 16:52:27.338 . file.c:65 Mapping of 11483246 bytes for testdb/si/2/1520.sst
+[6396] 03 Apr 16:52:27.338 - sst_loader.c:183 Index @ offset: 10689719 size: 793455
+[6396] 03 Apr 16:52:27.338 - sst_loader.c:184 Meta Block @ offset: 10689647 size: 72
+[6396] 03 Apr 16:52:27.338 . sst_loader.c:201 Data size:        10305643
+[6396] 03 Apr 16:52:27.338 . sst_loader.c:203 Index size:       0
+[6396] 03 Apr 16:52:27.338 . sst_loader.c:204 Key size:         2560000
+[6396] 03 Apr 16:52:27.338 . sst_loader.c:205 Num blocks size:  32000
+[6396] 03 Apr 16:52:27.338 . sst_loader.c:206 Num entries size: 160000
+[6396] 03 Apr 16:52:27.338 . sst_loader.c:207 Value size:       160000000
+[6396] 03 Apr 16:52:27.338 . sst_loader.c:210 Filter size:      384004
+[6396] 03 Apr 16:52:27.338 . sst_loader.c:211 Bloom offset 10305643 size: 384004
+[6396] 03 Apr 16:52:27.343 . sst.c:342 Smallest key: key-0 Largest key: key-99999 seeks: 100
+[6396] 03 Apr 16:52:27.361 . sst.c:51 --- Level 0 [  3 files, 334 KiB  ]---
+[6396] 03 Apr 16:52:27.361 . sst.c:60 Metadata filenum:2396 smallest: key-5780 largest: key-7999
+[6396] 03 Apr 16:52:27.361 . sst.c:60 Metadata filenum:2397 smallest: key-6409 largest: key-7999
+[6396] 03 Apr 16:52:27.361 . sst.c:60 Metadata filenum:2398 smallest: key-7012 largest: key-7999
+[6396] 03 Apr 16:52:27.361 . sst.c:51 --- Level 1 [  1 files,   5 MiB  ]---
+[6396] 03 Apr 16:52:27.361 . sst.c:60 Metadata filenum:2395 smallest: key-0 largest: key-9999
+[6396] 03 Apr 16:52:27.361 . sst.c:51 --- Level 2 [  1 files,  10 MiB  ]---
+[6396] 03 Apr 16:52:27.361 . sst.c:60 Metadata filenum:1520 smallest: key-0 largest: key-99999
+[6396] 03 Apr 16:52:27.361 . sst.c:51 --- Level 3 [  0 files,   0 bytes]---
+[6396] 03 Apr 16:52:27.361 . sst.c:51 --- Level 4 [  0 files,   0 bytes]---
+[6396] 03 Apr 16:52:27.361 . sst.c:51 --- Level 5 [  0 files,   0 bytes]---
+[6396] 03 Apr 16:52:27.361 . sst.c:51 --- Level 6 [  0 files,   0 bytes]---
+[6396] 03 Apr 16:52:28.207 . db.c:33 Closing database 0
+[6396] 03 Apr 16:52:28.207 . sst.c:415 Sending termination message to the detached thread
+[6396] 03 Apr 16:52:28.207 . sst.c:422 Waiting the merger thread
+[6396] 03 Apr 16:52:28.207 - sst.c:176 Exiting from the merge thread as user requested
+[6396] 03 Apr 16:52:28.208 - file.c:170 Truncating file testdb/si/manifest to 195 bytes
+[6396] 03 Apr 16:52:28.213 . log.c:46 Removing old log file testdb/si/0.log
+[6396] 03 Apr 16:52:28.213 . skiplist.c:57 SkipList refcount is at 0. Freeing up the structure
+SELECTED ACTION:__READ__
++-----------------------------+----------------+------------------------------+-------------------+
+|Random-READ    (done:200000, found:200000): 0.000050 sec/op; 20000.0 reads per sec(estimated); cost:10.000(sec)
