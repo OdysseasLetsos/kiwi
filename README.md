@@ -1,10 +1,10 @@
 # Multithreaded Data Storage Engine (KIWI)
 
-## Περιγραφή
+## Description
 
-Η εργασία αφορά τη μετατροπή μιας έτοιμης μηχανής αποθήκευσης δεδομένων (KIWI Engine) σε πολυνηματική εφαρμογή.  
-Στόχος είναι η βελτίωση της απόδοσης μέσω ταυτόχρονων λειτουργιών put (write) και get (read), με χρήση της βιβλιοθήκης pthreadS.  
-Η υλοποίηση εξασφαλίζει αμοιβαίο αποκλεισμό (mutual exclusion) και σωστό συγχρονισμό (synchronization) μεταξύ των νημάτων.
+This project involves converting an existing data storage engine (KIWI Engine) into a multithreaded application.
+The goal is to improve performance through concurrent put (write) and get (read) operations using the pthreads library.
+The implementation ensures mutual exclusion and proper synchronization among threads.
 
 ---
 
