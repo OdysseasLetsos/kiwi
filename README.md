@@ -94,13 +94,16 @@ Ensured exclusive execution for writers and simultaneous access for readers.
 
 
 How to Run
-1.Compile:
+1.Compile
+
 make all
 
-2.Run:
-./kiwi-bench <λειτουργία> <αριθμός εγγραφών> <αριθμός νημάτων>
+2.Run
 
-Examples:
+./kiwi-bench <operation> <number_of_records> <number_of_threads>
+
+Examples
+
 ./kiwi-bench write 100000 4
 ./kiwi-bench read 50000 2
 ./kiwi-bench readwrite 100000 8
@@ -122,7 +125,7 @@ The Reader–Writer implementation ensures data stability and safety.
 ---
 
 Contributors
-Implementation: Οδυσσέας Λέτσος
+Implementation: Odysseas Letsos
 Language: C / C++
 Thread Library: pthreads
 Environment: Linux / Unix
