@@ -118,7 +118,7 @@ or readwrite, the user chooses the read/write ratio:
 
 
  
-##Results & Observations
+## Results & Observations
 
 The multithreaded approach significantly improved performance.
 Proper synchronization prevented errors such as segmentation faults and race conditions.
@@ -126,7 +126,7 @@ The Reader–Writer implementation ensures data stability and safety.
 
 ---
 
-##Contributors
+## Contributors
 Implementation: Odysseas Letsos
 Language: C / C++
 Thread Library: pthreads
