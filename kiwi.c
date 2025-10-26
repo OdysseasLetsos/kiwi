@@ -1,4 +1,4 @@
-include <string.h>
+#include <string.h>
 #include "../engine/db.h"
 #include "../engine/variant.h"
 #include "bench.h"
