@@ -8,33 +8,37 @@
 #include "merger.h"
 
 typedef struct _db {
-//    char basedir[MAX_FILENAME];
+    // The base directory of the database
     char basedir[MAX_FILENAME+1];
     SST* sst;
     MemTable* memtable;
     
-    //posoi anagnwstes yparxoun ekeinh thn xronikh stigmh
+    // Number of readers at the current moment
     int readers_num;
-    //posoi grafeis yparxoun ekeinh thn xronikh stigmh
-    //int writer_num;
+    // Number of writers at the current moment
+    // int writer_num;
 
-    //kleidaria gia writer kai reader
+    // Mutex locks for writer and reader
     pthread_mutex_t writer;	
     pthread_mutex_t reader;
     	
 } DB;
 
+// Functions to increment/decrement the number of readers
 int addreadnum(int readers_num);
 int subreadnum(int readers_num);
 
+// Database open and close functions
 DB* db_open(const char *basedir);
 DB* db_open_ex(const char *basedir, uint64_t cache_size);
-
 void db_close(DB* self);
+
+// Core database operations: add, get, remove
 int db_add(DB* self, Variant* key, Variant* value);
 int db_get(DB* self, Variant* key, Variant* value);
 int db_remove(DB* self, Variant* key);
 
+// Structure for database iterator
 typedef struct _db_iterator {
     DB* db;
     unsigned valid:1;
@@ -73,9 +77,9 @@ typedef struct _db_iterator {
     ChainedIterator* current;
 } DBIterator;
 
+// Functions to create and manage iterators
 DBIterator* db_iterator_new(DB* self);
 void db_iterator_free(DBIterator* self);
-
 void db_iterator_seek(DBIterator* self, Variant* key);
 void db_iterator_next(DBIterator* self);
 int db_iterator_valid(DBIterator* self);
