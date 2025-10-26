@@ -3,64 +3,64 @@
 ## Description
 
 This project involves converting an existing data storage engine (KIWI Engine) into a multithreaded application.
-The goal is to improve performance through concurrent put (write) and get (read) operations using the pthreads library.
+The goal is to improve performance through concurrent put (`write`) and get (`read`) operations using the pthreads library.
 The implementation ensures mutual exclusion and proper synchronization among threads.
 
 ---
 
-## Αρχιτεκτονική της Μηχανής
+## Engine Architecture
 
-Η μηχανή αποτελείται από δύο κύριους φακέλους:
-bench/ → Επικοινωνία με το terminal, δημιουργία και διαχείριση νημάτων
-engine/ → Εσωτερική λειτουργία της βάσης δεδομένων
+The engine consists of two main directories:
+bench/ → Terminal interface, thread creation, and management
+engine/ → Internal database functionality
 
-### Δομή Engine
-| Αρχείο | Περιγραφή |
-| `db.cc / db.h` | Διαχείριση βάσης δεδομένων (open, close, add, get) |
-| `memtable.cc / memtable.h` | Προσωρινή αποθήκευση δεδομένων στη μνήμη |
-| `sst.cc / sst.h` | Διαχείριση αποθήκευσης στον δίσκο & διαδικασία compaction |
+### Engine Structure
+| File | Description |
+| `db.cc / db.h` | Database management (open, close, add, get) |
+| `memtable.cc / memtable.h` | Temporary in-memory data storage |
+| `sst.cc / sst.h` | Disk storage management & compaction process |
 
 ---
 
-## Λειτουργίες
+## Operations
 
 ### Write (put)
-Προσθέτει εγγραφές στη βάση μέσω της `db_add()`.  
-Όταν γεμίσει η μνήμη (`memtable`), τα δεδομένα γράφονται στο δίσκο (`sst`) μέσω **compaction** σε ξεχωριστό νήμα.
+Adds records to the database via db_add().
+When the memory (`memtable`) is full, the data is written to disk (`sst`) through compaction in a separate thread.
 
 ### Read (get)
-Αναζητά δεδομένα αρχικά στη μνήμη (`memtable`) και, αν δεν υπάρχουν, στον δίσκο (`sst`).
+Searches for data first in memory (`memtable`) and, if not found, on disk (`sst`).
 
 ### ReadWrite
-Μικτή λειτουργία που εκτελεί παράλληλα αναγνώσεις και εγγραφές σε διάφορα ποσοστά:
+Performs mixed operations concurrently with different read/write ratios:
 
-| Επιλογή | Read | Write |
+| Option | Read | Write |
 | 1 | 50% | 50% |
 | 2 | 10% | 90% |
 | 3 | 60% | 40% |
 
 ---
 
-## Πολυνηματική Υλοποίηση
+## Multithreaded Implementation
 
-- Χρήση pthreads για τη δημιουργία ανεξάρτητων νημάτων ανά λειτουργία (`put` / `get`).
-- Κοινή βάση δεδομένων για όλα τα νήματα.
-- Εφαρμογή mutex locks για:
-  - Τον έλεγχο πρόσβασης στη βάση.
-  - Την αποφυγή συγκρούσεων κατά την ταυτόχρονη πρόσβαση.
-  - Τον συγχρονισμό των στατιστικών χρόνου εκτέλεσης.
+- Uses pthreads to create separate threads for each operation (`put` / `get`).
+- Shared database among all threads.
+- Mutex locks are implemented to:
+  - Control access to the database.
+  - Prevent conflicts during simultaneous access.
+  - Synchronize execution timing statistics.
 
 ---
 
 ## Reader–Writer Problem
 
-Η πολιτική πρόσβασης επιτρέπει:
+The access policy allows:
 
-- Πολλούς αναγνώστες ταυτόχρονα.  
-- Έναν μόνο συγγραφέα κάθε φορά.  
-- Οι συγγραφείς έχουν αποκλειστική πρόσβαση όταν γράφουν.
+- Multiple readers simultaneously.  
+- Only one writer at a time.  
+- Writers have exclusive access during write operations.
 
-Η επίλυση επιτεύχθηκε με χρήση locks στις συναρτήσεις:
+Implemented using locks in the functions:
 
 db_add();
 db_get();
@@ -68,63 +68,61 @@ db_get();
 
 
 
-Τροποποιήσεις Κώδικα
+Code Modifications
 - bench.cc
 
-Προσθήκη pthread.h και δημιουργία δομής struct dataset για τα ορίσματα των νημάτων.
-Συνάρτηση printer() για εμφάνιση στατιστικών.
-Δημιουργία νημάτων με pthread_create() και τερματισμός με pthread_join().
-Κοινή χρήση db_open() και db_close() για όλα τα νήματα.
+Added pthread.h and struct dataset for thread arguments.
+printer() function for displaying statistics.
+Threads created with pthread_create() and joined with pthread_join().
+Shared use of db_open() and db_close() for all threads.
 
 - kiwi.cc
 
-Εισαγωγή mutexes για αποφυγή συγκρούσεων στους χρόνους εκτέλεσης:
+Introduced mutexes to prevent conflicts in execution times:
 pthread_mutex_lock(&mymutex);
 ...
 pthread_mutex_unlock(&mymutex);
 
 - db.cc
 
-Προσθήκη κλειδαριών για αναγνώστες και συγγραφείς:
+Added reader and writer locks:
 pthread_mutex_t writer;
 pthread_mutex_t reader;
 
 
-Εφαρμογή ελέγχου πρόσβασης ώστε:
-Οι writers να εκτελούνται αποκλειστικά.
-Οι readers να μπορούν να διαβάζουν ταυτόχρονα.
+Ensured exclusive execution for writers and simultaneous access for readers.
 
 
-Τρόπος Εκτέλεσης
-1.Μεταγλώττιση
+How to Run
+1.Compile:
 make all
 
-2.Εκτέλεση
+2.Run:
 ./kiwi-bench <λειτουργία> <αριθμός εγγραφών> <αριθμός νημάτων>
 
-Παραδείγματα
+Examples:
 ./kiwi-bench write 100000 4
 ./kiwi-bench read 50000 2
 ./kiwi-bench readwrite 100000 8
 
 
-Κατά την επιλογή readwrite, ο χρήστης επιλέγει ποσοστό read/write:
+or readwrite, the user chooses the read/write ratio:
 1 -> 50% read / 50% write
 2 -> 10% read / 90% write
 3 -> 60% read / 40% write
 
 
  
-Αποτελέσματα & Παρατηρήσεις
-Η πολυνηματική προσέγγιση βελτίωσε σημαντικά την απόδοση.
-Ο σωστός συγχρονισμός απέτρεψε σφάλματα όπως segmentation faults και race conditions.
-Η υλοποίηση Reader–Writer εξασφαλίζει σταθερότητα και ασφάλεια δεδομένων.
+Results & Observations
 
+The multithreaded approach significantly improved performance.
+Proper synchronization prevented errors such as segmentation faults and race conditions.
+The Reader–Writer implementation ensures data stability and safety.
 
 ---
 
-Συντελεστές
-Υλοποίηση: Οδυσσέας Λέτσος
-Γλώσσα: C / C++
-Βιβλιοθήκη νημάτων: pthreads
-Περιβάλλον: Linux / Unix
+Contributors
+Implementation: Οδυσσέας Λέτσος
+Language: C / C++
+Thread Library: pthreads
+Environment: Linux / Unix
