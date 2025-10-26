@@ -68,7 +68,7 @@ db_get();
 
 ---
 
-##Code Modifications
+## Code Modifications
 
 - bench.cc
 
@@ -94,7 +94,7 @@ pthread_mutex_t reader;
 Ensured exclusive execution for writers and simultaneous access for readers.
 
 
-##How to Run
+## How to Run
 
 1.Compile
 
