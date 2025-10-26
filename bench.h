@@ -15,28 +15,28 @@
 long long get_ustime_sec(void);
 void _random_key(char *key,int length);
 
-//arxikopoiw struct etsi vste na parw ta orismata gia ta nhmata gia thn kathe leitourgia
+// Initialize struct to pass arguments to threads for each operation
 struct data {
 	long int count;
 	int r;
 	long int threads;	
 };
 
-//arxikopoiw sunarthsh etsi wste na ektupwsw ta statistika xronou thw kathe leitourgias read kai write
+// Function to print timing statistics for each read and write operation
 void printer(char* action,long int count, struct  data threads_args);
 
-//sunarthsh etsi vste ta nhmata na treksoun aythn me ta orismata pou tou exw orisei
+// Function for threads to run with the arguments we defined
 void * write_thread(void* arg);
 void * read_thread(void* arg);
 
-//arxikopoiw sunarthsh pou ylopoioun to sunoliko kostow gia thn kathe leitourgia
+// Function to calculate total cost for each operation
 double costwrites(double cost,double newcost);
 double costreads(double cost,double newcost);
 
-//arxikopoiw kleidaria gia reads kai writes
+// Initialize mutexes for reads and writes
 pthread_mutex_t mutexofreads;
 pthread_mutex_t mutexofwrites;
 
-//arxikopoiw antistoixa to kostos gia ta read kai ta write
+// Corresponding variables to store total cost for reads and writes
 double costofreads;
 double costofwrites;
