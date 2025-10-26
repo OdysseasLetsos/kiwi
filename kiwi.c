@@ -1,28 +1,29 @@
-#include <string.h>
+include <string.h>
 #include "../engine/db.h"
 #include "../engine/variant.h"
 #include "bench.h"
 #include <pthread.h>
 
-//orizw vash 
+// Define database
 DB *db;
 
-//arxikopoiw mutex gia read kai write
+// Initialize mutex for read and write
 pthread_mutex_t mutexofreads=PTHREAD_MUTEX_INITIALIZER;
 pthread_mutex_t mutexofwrites=PTHREAD_MUTEX_INITIALIZER;
 
-//dhmiourgw sunarthsh pou epistrefei to kostos apo ta writes
+// Function that returns the cost of writes
 double costwrites(double cost,double newcost){
 	costofwrites=cost+newcost;
 	return costofwrites;
 }
-//dhmiourgw sunarthsh pou epistrefei to kostos apo ta reads
+
+// Function that returns the cost of reads
 double costreads(double cost,double newcost){
 	costofreads=cost+newcost;
 	return costofreads;
 }
 
-//sunarthsh write test san epipleon orisma ta threads etsi wste na ta spasw analoga me tiw leitourgies
+// Write test function, with threads as additional argument to split operations according to threads
 void _write_test(long int count, int r,long int threads)
 {
 	int i;
@@ -40,7 +41,7 @@ void _write_test(long int count, int r,long int threads)
 	memset(sbuf, 0, 1024);
 
 	start = get_ustime_sec();
-	//metrhths gia kathe leitorugia analoga me threads
+	// Counter for each operation according to threads
 	long int counter=(long int)count/threads;
 
 	for (i = 0; i < counter; i++) {
@@ -66,22 +67,20 @@ void _write_test(long int count, int r,long int threads)
 		}
 	}
 
-
 	end = get_ustime_sec();
 	cost = end -start;
 	
-
-	//diaforetikes kleidaries gia kathe read kai write 
-	//lock unlock krisimh perioxh 
+	// Different locks for each read and write
+	// Lock/unlock critical section
 	pthread_mutex_lock(&mutexofwrites);
-	//sunoliko kostos prosthetete se kathe nhma pou ylopoiei to write to neo kostos amoibaios apokleismous etsi este na mhn vreuei kapoio allo nhma tautoxrona sto idio shmeio kai ananewsei ton xrono symfvna me ayto
+	// Total cost is added for each thread performing write. The new cost is updated to ensure
+	// no other thread can access the same point simultaneously and execution time is updated accordingly
 	costofwrites=costwrites(cost,costofwrites);
 	pthread_mutex_unlock(&mutexofwrites);
-	
-	
 		
 }
-//sunarthsh read test epishs san epipleon orisma ta threads etsi wste na ta spasw analoga me tiw leitourgies
+
+// Read test function, also with threads as additional argument to split operations according to threads
 void _read_test(long int count, int r,long int threads)
 {
 	int i;
@@ -94,10 +93,8 @@ void _read_test(long int count, int r,long int threads)
 	char key[KSIZE + 1];
 	long int counter;
 	
-
-	
 	start = get_ustime_sec();
-	//metrhths gia kathe leitorugia analoga me threads
+	// Counter for each operation according to threads
 	counter=(long int)count/threads;
 	for (i = 0; i < counter;i++) {
 		memset(key, 0, KSIZE + 1);
@@ -113,8 +110,8 @@ void _read_test(long int count, int r,long int threads)
 		sk.mem = key;
 		ret =db_get(db, &sk, &sv);
 		if (ret) {
-			//posa vrethikan
-			//db_free_data(sv.mem);	
+			// Count found entries
+			// db_free_data(sv.mem);	
 			found++;
 		} else {
 			INFO("not found key#%s", 
@@ -130,16 +127,13 @@ void _read_test(long int count, int r,long int threads)
 		}
 	}
 
-	
-
 	end = get_ustime_sec();
 	cost = end - start;
 
-	//lock unlock krisimh peioxh amoibaios apokleismos gia kathe nhma gia to sunoliko kostow twn read
+	// Lock/unlock critical section, mutual exclusion for each thread for total read cost
 	pthread_mutex_lock(&mutexofreads);
-	//apothikeyetai sthn metavlith costofreads ananewnetai kathe fora apo kath nhma ksexwrista
+	// Store in variable costofreads, updated separately by each thread
 	costofreads=costreads(cost,costofreads);
 	pthread_mutex_unlock(&mutexofreads);
-	
 	
 }
